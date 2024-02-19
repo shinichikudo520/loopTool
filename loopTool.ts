@@ -14,6 +14,10 @@ export default abstract class LoopTool {
     this._timer = v;
   }
 
+  public get switch(): boolean {
+    return this.timer > -1;
+  }
+
   /**
    * 轮询, 次/interval
    * @param isAutoUpdate 是否为轮询器自动刷新
